@@ -13,6 +13,8 @@ RUN apt-get update && \
 COPY package.json .
 
 RUN npm install
+RUN npm install --save puppeteer
+RUN npm install cors
 
 COPY . .
 
